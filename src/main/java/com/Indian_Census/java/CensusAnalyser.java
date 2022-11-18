@@ -32,10 +32,9 @@ public class CensusAnalyser {
 
 	public static void main(String[] args) throws CensusAnalyserException {
 
-		final String INDIA_CENSUS_CSV_FILE_PATH = "C:\\Users\\mesha\\OneDrive\\Desktop\\DataBase\\Indian_Census_Analyzer\\IndiaStateCensusData.csv";
 		final String INDIAN_STATE_CSV_FILE = "C:\\Users\\mesha\\OneDrive\\Desktop\\DataBase\\Indian_Census_Analyzer\\IndianState.csv";
 		CensusAnalyser censusAnalyser = new CensusAnalyser();
-		int numOfRecords = censusAnalyser.loadIndiaCensusData(INDIA_CENSUS_CSV_FILE_PATH);
+		int numOfRecords = censusAnalyser.loadIndiaCensusData(INDIAN_STATE_CSV_FILE);
 		System.out.println(numOfRecords);
 	}
 
